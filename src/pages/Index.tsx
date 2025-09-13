@@ -1,12 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/ui/navbar";
+import HeroSection from "@/components/sections/hero";
+import AboutSection from "@/components/sections/about";
+import ProductsSection from "@/components/sections/products";
+import ContactSection from "@/components/sections/contact";
+import FloatingBubbles from "@/components/ui/floating-bubbles";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <FloatingBubbles />
+      <Navbar />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <ProductsSection />
+        <ContactSection />
+      </main>
+      
+      {/* Footer */}
+      <footer className="bg-foreground/5 py-8 px-4">
+        <div className="container mx-auto text-center">
+          <p className="text-muted-foreground text-sm">
+            © 2024 LabelSip. Making brands memorable, one sip at a time.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };

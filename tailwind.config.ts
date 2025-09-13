@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        nunito: ['Nunito', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -21,6 +24,8 @@ export default {
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
+          soft: "hsl(var(--primary-soft))",
+          deep: "hsl(var(--primary-deep))",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
